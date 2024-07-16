@@ -8,8 +8,9 @@ const nodemailer = require("nodemailer");
 app.use(cors());
 app.use(express.json());
 
-const uri = "mongodb+srv://haran2231:DhpURaYAbHtpzQ77@cluster0.lqsredr.mongodb.net/bulk_email?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "mongodb+srv://haran2231:DhpURaYAbHtpzQ77@cluster0.lqsredr.mongodb.net/bulk_email?retryWrites=true&w=majority&tls=true";
 const client = new MongoClient(uri, { monitorCommands: true });
+
 
 async function connectDB() {
   try {
