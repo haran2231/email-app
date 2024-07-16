@@ -104,7 +104,7 @@ const Mailbox = () => {
 
         setSending(true);
         try {
-            const response = await axios.post("https://bulk-email-oh0b.onrender.com/sendemail", { msg: fileContent, email: data, });
+            const response = await axios.post("https://email-app-ua7d.onrender.com/sendemail", { msg: fileContent, email: data, });
             console.log(response.data);
             if (response.data) {
                 alert("Email sent successfully");
