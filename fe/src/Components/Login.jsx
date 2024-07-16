@@ -9,7 +9,7 @@ const Login = () => {
 
     const handleLogin = async () => {
         try {
-            const res = await axios.post('https://email-app-ua7d.onrender.com/login', {
+            const res = await axios.post('https://email-app-9dmm.onrender.com/login', {
                 username,
                 password
             });
