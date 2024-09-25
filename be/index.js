@@ -87,7 +87,7 @@ app.post("/sendemail", async (req, res) => {
             await transporter.sendMail({
                 from: credentials.user,
                 to: email,
-                subject: "Message from Hari",
+                subject: "Application for React JS/ Fullstack Developer",
                 text: msg
             });
             console.log("Email sent to " + email);
