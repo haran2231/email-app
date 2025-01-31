@@ -2,9 +2,9 @@ import React, { useState, useRef } from "react";
 import axios from 'axios';
 import * as XLSX from 'xlsx';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
-// import WordFileUploader from "./WordFileUploader";
+import WordFileUploader from "./WordFileUploader";
 import Mammoth from 'mammoth';
-// import FileReader from 'react-file-reader';
+import FileReader from 'react-file-reader';
 
 
 const Mailbox = () => {
